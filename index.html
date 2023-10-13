@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panda </title>
     <style>
-        form{
+        #form1{
             display: inline;
         }
         img{
             margin-top: 10px;
         }
-        a{
+        a, form{
+            display: block;
+            margin-bottom: 10px;
+        }
+        .submit{
             display: block;
         }
     </style>
@@ -20,12 +24,22 @@
 
 <body>
     <div>
-        <form>Search your image here:</form>
+        <form id="form1">Search your image here:</form>
         <input type="text" placeholder="Kung fu panda">
         <button>Search</button>
     </div>
     <img width="300px" src="/image/giant-panda-WW230176.webp" alt="">
     <a href="https://en.wikipedia.org/wiki/Giant_panda">Learn more about Panda</a>
+    <p>Feedback Form:</p>
+    <form>Name:
+        <input placeholder="Your name" type="text">
+    </form>
+    <form>Date:
+        <input placeholder="mm/dd/yyyy" type="datetime">
+    </form>
+<textarea name="Comment" id="" cols="30" rows="10"> Comment:</textarea>
+<button class="submit">Submit</button>
+
 </body>
 
 </html>
